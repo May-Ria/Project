@@ -1,0 +1,18 @@
+{
+    "DB_NAME": "alpine",
+    "DB_USER": "alpine",
+    "DB_PASSWORD": "5UzkV2Rnyu8FqJ2V",
+    "DB_HOST": "127.0.0.1",
+    "DB_PORT": "3306",
+
+    "HUBSPOT_APIKEY": "b0a56f06-14e8-4c48-bcc6-c7dfe9d9185f",
+  
+    "STATIC_URL": "/static/",
+    "MEDIA_URL": "/media/",
+
+    "PRIVATE_STORIES_USER_ID": 2,
+  
+    "HOT_RELOADING": false,
+    "STATIC_URL_HOT": "http://127.0.0.1:9999/static/"
+  }
+  

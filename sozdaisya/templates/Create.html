@@ -1,0 +1,74 @@
+{% extends "base_generic.html" %}
+
+	 {% block title %}<Title> Сайт РГАТУ девчачий регистрация</Title>{% endblock %}
+	 {% block style %}
+	 <style>
+	 body {
+	       height: 680px;
+           background: linear-gradient(135deg, #ccff66 0%, #ff99cc 100%);
+		   }
+		   
+          .edit {
+                border:1px solid #FFFFFF;
+                color: #000000;
+				padding: 7px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				font-size: 20px;
+				font-family: Verdana;
+				background: #FFF;
+				position: relative;
+                left: 40%;
+				
+				}
+		  .edit:hover
+           {
+		      border:1px solid #999999;
+                color: #000000;
+				padding: 7px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				font-size: 20px;
+				font-family: Verdana;
+				background: #FFF;
+				position: relative;
+                left: 40%;
+				
+           }		  
+		    .new 
+		   {
+             border: 2px solid #ffffff;
+			 background: none;
+             border-radius: 45px;
+			 height: 40px;
+			 width: 200px;
+			 button-align: center;
+			 position: relative;
+             left: 43%;
+			 color: #ffffff;
+		   }
+		   .new:hover
+		   {
+			 border: 2px solid #ffffff;
+			 background: #ffffff;
+             border-radius: 45px;
+			 height: 40px;
+			 width: 200px;
+			 position: relative;
+             left: 43%;
+			 color: #000000;
+		   }
+	 </style>
+	 {% endblock %}
+
+  {% block body %} 
+  <form action="" method="post">
+  {% csrf_token %}
+  <p><input id="Login" class="edit" type="login" name="Login" placeholder="Login"</p>
+  <p><input id="Email" class="edit" type="email" name="Email" placeholder="Your e-mail"</p>
+  <p><input id="Password" class="edit" type="password" name="Password" placeholder="New Password"></p>
+  <p><input id="PasswordRep" class="edit" type="password" name="PasswordRep" placeholder="Confirm Password"></p>
+  <a HREF=""><button class="new">SAVE</button></a>
+  </form>
+  
+  {% endblock %}

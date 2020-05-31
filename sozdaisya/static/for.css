@@ -1,0 +1,81 @@
+ body {
+	       height: 695px;
+           background: linear-gradient(135deg, #ccff66 0%, #ff99cc 100%);
+		   }
+		   
+		   h11{
+			  font-size: 15px;
+              color: #ffffff;
+              position: fixed;
+              left: 45%;  
+		     }
+		   h22
+			{
+			  font-size: 15px;
+              color: #ffffff;
+              position: fixed;
+              left: 47%; 
+			  bottom: 16%;
+			}
+          .edit 
+		    {
+                border:1px solid #FFFFFF;
+                color: #000000;
+				padding: 7px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				font-size: 20px;
+				font-family: Verdana;
+				background: #FFF;
+				position: relative;
+                left: 40%
+				
+			}
+           .edit:hover
+           {
+		      border:1px solid #999999;
+                color: #000000;
+				padding: 7px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				font-size: 20px;
+				font-family: Verdana;
+				background: #FFF;
+				position: relative;
+                left: 40%;
+				
+           }
+		    .new 
+		   {
+             border: 2px solid #ffffff;
+			 background: none;
+             border-radius: 45px;
+			 height: 40px;
+			 width: 200px;
+			 button-align: center;
+			 position: relative;
+             left: 43%;
+			 color: #ffffff;
+		   }
+		   .new:hover
+		   {
+			 border: 2px solid #ffffff;
+			 background: #ffffff;
+             border-radius: 45px;
+			 height: 40px;
+			 width: 200px;
+			 position: relative;
+             left: 43%;
+			 color: #000000;
+		   }
+		   .new:disabled
+		   {
+		    border: 2px solid #ffffff;
+			 background: none;
+             border-radius: 45px;
+			 height: 40px;
+			 width: 200px;
+			 position: relative;
+             left: 43%;
+			 color: #ffffff;
+		   }

@@ -1,0 +1,63 @@
+{% extends "base_generic.html" %}
+ 
+	 {% block title %}<Title> Сайт РГАТУ девчачий Чат </Title>{% endblock %}
+	 {% block style %}
+	 <style>
+	 body {
+	       height: 680px;
+           background: linear-gradient(135deg, #ccff66 0%, #ff99cc 100%);
+		   }
+		   .send{
+	position: fixed; 
+    left: 75%; bottom: 0; 
+	width: 10%;
+	height: 30px;
+	cursor: pointer;
+	 font-size:17px;  
+	 text-decoration: none; 
+	 padding:2px 15px; 
+	 color:#000000; 
+	 background-color:#ffffff; 
+	 border-radius:10px; 
+	 border: 3px solid #ffffff; 
+	 margin: 5px
+}
+		   .footer {
+                position: fixed; 
+                left: 3%; bottom: 0; 
+	            width: 70%;
+	            height: 30px;
+                   }
+		    span.date
+                  {
+	              color: blue;
+	
+                  }
+            input.userMessageText
+                    {
+	                text-align:center; 
+	                position: fixed; 
+                    left: 0; bottom: 0; 
+	                width: 80%;
+	                height: 30px;
+					color: #ffffff
+                    }	  
+		   .myScroll
+		   {
+		     margin: 0 auto; height: 40%; width: 95%; overflow-y: scroll; background-color: none; padding: 5px 5px; border: 2px 2px; border-color: #ffffff;
+		   }
+	 </style>
+	 {% endblock %}
+  
+  {% block body %} 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="/static/ajaxGetPost.js"></script>
+  <div class="myScroll">
+  </div>
+  <p><input id="Send" class="footer"  type="text" style="text-align:center" name="Send" placeholder="Введите сообщение"</p>
+  <p class="new"><input type="submit" class="send" value="Отправить" id="SendMassage"></p>
+
+  {% endblock %}
+ 
